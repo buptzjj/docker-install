@@ -75,9 +75,9 @@ mountCgroup
 checkCgconfig
 docker -v
 if [ $? -ne 0 ];then
-    logger "docker安装失败，请检查日志"
+    echo "docker安装失败，请检查日志"
 else
-    logger "docker安装成功，结束安装程序"
+    echo "docker安装成功，结束安装程序"
     exit 0
 fi
 
